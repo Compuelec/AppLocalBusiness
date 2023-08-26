@@ -64,28 +64,28 @@ export class LoginServiceService {
     }
   ]
 
-  administradores = [
+  administradores: Administrator[] = [
     {
-      "id": 6,
-      "rut": "66666666-6",
-      "email": "admin1@admin.confiteria.cl",
-      "name": "Admin",
-      "last_name": "Uno",
-      "user_type": "administrador",
-      "user_enabled": true,
-      "phone": "+111111111",
-      "address": "Oficina Principal"
+      id: 6,
+      rut: "66666666-6",
+      email: "admin1@admin.confiteria.cl",
+      name: "Admin",
+      last_name: "Uno",
+      user_type: "administrador",
+      user_enabled: true,
+      phone: "+111111111",
+      address: "Oficina Principal"
     },
     {
-      "id": 7,
-      "rut": "77777777-7",
-      "email": "admin2@admin.confiteria.cl",
-      "name": "Admin",
-      "last_name": "Dos",
-      "user_type": "administrador",
-      "user_enabled": true,
-      "phone": "+222222222",
-      "address": "Oficina Secundaria"
+      id: 7,
+      rut: "77777777-7",
+      email: "admin2@admin.confiteria.cl",
+      name: "Admin",
+      last_name: "Dos",
+      user_type: "administrador",
+      user_enabled: true,
+      phone: "+222222222",
+      address: "Oficina Secundaria"
     }
   ]
 
