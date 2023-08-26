@@ -4,6 +4,7 @@ export interface Worker {
     rut: string;
     email: string;
     name: string;
+    password: string;
     last_name: string;
     user_type: string;
     user_enabled: boolean;

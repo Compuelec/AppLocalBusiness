@@ -10,8 +10,9 @@ export class LoginServiceService {
     {
       id: 1,
       rut: "11111111-1",
-      email: "trabajador1@confiteria.cl",
+      email: "losbar@gmail.com",
       name: "Juan",
+      password: '123456789',
       last_name: "Pérez",
       user_type: "trabajador",
       user_enabled: true,
@@ -23,6 +24,7 @@ export class LoginServiceService {
       rut: "22222222-2",
       email: "trabajador2@confiteria.cl",
       name: "María",
+      password: '123456789',
       last_name: "González",
       user_type: "trabajador",
       user_enabled: true,
@@ -34,6 +36,7 @@ export class LoginServiceService {
       rut: "33333333-3",
       email: "trabajador3@confiteria.cl",
       name: "Carlos",
+      password: '123456789',
       last_name: "López",
       user_type: "trabajador",
       user_enabled: true,
@@ -45,6 +48,7 @@ export class LoginServiceService {
       rut: "44444444-4",
       email: "trabajador4@confiteria.cl",
       name: "Ana",
+      password: '123456789',
       last_name: "Martínez",
       user_type: "trabajador",
       user_enabled: true,
@@ -56,6 +60,7 @@ export class LoginServiceService {
       rut: "55555555-5",
       email: "trabajador5@confiteria.cl",
       name: "Pedro",
+      password: '123456789',
       last_name: "Ramírez",
       user_type: "trabajador",
       user_enabled: true,
@@ -89,7 +94,13 @@ export class LoginServiceService {
     }
   ]
 
+  constructor() {}
 
-constructor() { }
-
+  // Método para iniciar sesión
+  login(email: string, password: string): Worker | null {
+    const worker = this.trabajadores.find (
+      worker => worker.email === email && worker.password === password
+    );
+     return worker ? worker : null;
+  }
 }
