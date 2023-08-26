@@ -1,0 +1,7 @@
+{
+  "name": "AppLocalBusiness",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
